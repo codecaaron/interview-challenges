@@ -1,6 +1,6 @@
-@import 'tailwindcss/base';
-@import 'tailwindcss/components';
-@import 'tailwindcss/utilities';
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
 
 html,
 body {
@@ -28,4 +28,19 @@ a:hover {
 img {
   max-width: 100%;
   display: block;
+}
+
+.btn-toggle {
+  border-radius: 0.25rem;
+  background-color: rgba(104 0 255 / 0.4);
+  color: white;
+  padding: 0.25rem 0.5rem;
+  font-size: 0.8rem;
+  text-transform: capitalize;
+  transition: 200ms background-color ease-in;
+}
+
+.btn-toggle:hover,
+.btn-toggle__active {
+  background-color: rgba(104 0 255 / 1);
 }
